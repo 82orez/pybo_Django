@@ -3,11 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Brian Tracy Lecture</title>
+    <style>
+        .En{
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <h1>Brian Tracy Lecture</h1>
-    <span class="number">1</span>
-<!--    <label for="text-area">Text를 입력하세요.</label>-->
-    <input type="text" id="text-area" value="문장을 입력하세요.">
+    <h1>Brian Tracy Lecture</h1><hr>
+
+    <div>
+        <h3>저는 매우 행복한 상태입니다. 여기에 있게 되어서</h3>
+        <input type="button" value="영어문장 보기/숨기기" onclick="hide()">
+        <h3 class="En" id="s1">I am very happy to be here.</h3>
+    </div>
+
+<script>
+    function hide() {
+        // document.getElementById('s1').style.color = 'red';
+        document.querySelector('#s1').style.color = 'red'
+    }
+</script>
+
 </body>
 </html>
